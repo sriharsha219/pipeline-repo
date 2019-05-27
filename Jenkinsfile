@@ -18,9 +18,14 @@ pipeline {
                         not {
                                 branch 'master'
                         }
+                 steps {
+                   
+                       echo 'executed when branch is not master'
+                    }
+
                 }
                 steps {
-			echo 'this is from stage-Three'
+			echo 'this is the last echo statement'
                         }
         }
 
