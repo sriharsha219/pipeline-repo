@@ -16,12 +16,12 @@ pipeline {
         stage('Three') {
                 when {
                         not {
-                                branch 'master'
+                                branch "master"
                      }
 
                 }
                 steps {
-			echo 'this is the last echo statement'
+			echo "this is the last echo statement"
                         }
         }
 
