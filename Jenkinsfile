@@ -15,8 +15,9 @@ pipeline {
 	    }
         stage('Three') {
                 when {
-                        not {
-                                branch "master"
+                        expression {
+                             sh "git rev-parse --abbrev-ref HEAD > GIT_BRANCH"
+                             GIT_BRANCH != 'master'
                      }
 
                 }
