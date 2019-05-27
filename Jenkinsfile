@@ -22,7 +22,7 @@ pipeline {
 
                 }
                 steps {
-			echo "this is the last echo statement"
+			sh "mvn install"
                         }
         }
 
