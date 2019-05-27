@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('One') {
                 steps {
-                        echo 'Hi, this is Zulaikha from edureka'
+                        echo 'Hi, this is declarative pipeline demo'
 			
                 }
         }
@@ -16,11 +16,11 @@ pipeline {
         stage('Three') {
                 when {
                         not {
-                                branch "master"
+                                branch 'master'
                         }
                 }
                 steps {
-			echo "Hello"
+			echo 'this is from stage-Three'
                         }
         }
 
