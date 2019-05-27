@@ -17,11 +17,7 @@ pipeline {
                 when {
                         not {
                                 branch 'master'
-                        }
-                 steps {
-                   
-                       echo 'executed when branch is not master'
-                    }
+                     }
 
                 }
                 steps {
